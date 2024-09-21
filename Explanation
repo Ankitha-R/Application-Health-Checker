@@ -1,0 +1,7 @@
+HTTP GET Request: The script sends a GET request to the application's URL.
+Status Code Check:
+If the status code is 200, the application is considered "up."
+Any other status code indicates that the application is "down."
+Exception Handling:
+It handles timeout errors (requests.exceptions.Timeout) and connection errors (requests.exceptions.ConnectionError) to handle common failure scenarios.
+Timeout: The request has a timeout of 5 seconds to avoid long waits when the server is unresponsive.
